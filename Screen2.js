@@ -3,6 +3,10 @@ import { View, Text} from 'react-native';
 
 export default class Screen2 extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
     render() {
         return (
             <View style={{
