@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text} from 'react-native';
 
-export default class Screen2 extends React.Component {
+export default class RNElementsScreen extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
+    constructor(props) {
+        super(props);
+      }
 
     render() {
         return (
@@ -17,14 +17,14 @@ export default class Screen2 extends React.Component {
                 alignItems: 'center'
               }}>
                 <Text
-              style={{
-                fontSize: 60,
-                color: 'black',
-                fontWeight: 'bold'
-              }}
-            >
-              Basic Mask 2
-            </Text>
+                style={{
+                    fontSize: 60,
+                    color: 'black',
+                    fontWeight: 'bold'
+                }}
+                >
+                    React Native Elements
+                </Text>
             </View>
         );
     }

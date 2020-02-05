@@ -5,7 +5,6 @@ export default class MainScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
       }
 
     render() {
@@ -23,7 +22,7 @@ export default class MainScreen extends React.Component {
                         fontWeight: 'bold'
                     }}
                     title="React Native Vector Icons"
-                    onPress={() => this.props.navigator.push('Screen2')}
+                    onPress={() => this.props.navigator.push('RNVectorIconsScreen')}
                     >
                 </Button>
                 <Button
@@ -32,6 +31,7 @@ export default class MainScreen extends React.Component {
                         fontWeight: 'bold'
                     }}
                     title="Native Base"
+                    onPress={() => this.props.navigator.push('NativeBaseScreen')}
                     >
                 </Button>
                 <Button
@@ -40,6 +40,7 @@ export default class MainScreen extends React.Component {
                         fontWeight: 'bold'
                     }}
                     title="React Native Elements"
+                    onPress={() => this.props.navigator.push('RNElementsScreen')}
                     >
                 </Button>
             </View>

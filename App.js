@@ -16,13 +16,14 @@ import {
   StatusBar,
 } from 'react-native';
 import Navigator from 'react-native-easy-router'
-import Screen1 from './Screen1'
-import Screen2 from './Screen2'
 import MainScreen from './src/screens/MainScreen'
+import NativeBaseScreen from './src/screens/NativeBaseScreen'
+import RNElementsScreen from './src/screens/RNElementsScreen'
+import RNVectorIconsScreen from './src/screens/RNVectorIconsScreen'
 
 const App: () => React$Node = () => {
   return (
-    <Navigator initialStack='MainScreen' screens={{ MainScreen, Screen2 }} />
+    <Navigator initialStack='MainScreen' screens={{ MainScreen, RNVectorIconsScreen, NativeBaseScreen, RNElementsScreen }} />
   );  
 };
 
