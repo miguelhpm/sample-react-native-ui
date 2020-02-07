@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Text, Content, Item, Input } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Text, Content, Separator, ListItem, Fab, View,} from 'native-base';
 
 
 export default class NativeBaseScreen extends React.Component {
@@ -27,16 +27,34 @@ export default class NativeBaseScreen extends React.Component {
                 </Right>
                 </Header>
                 <Content>
-                <Item regular> 
-                    <Input placeholder='Nombre Evento'/>
-                    <Icon name='information-circle' />
-                </Item>
-                <Item transparent>
-                    <Button> 
-                    <Text>Agregar</Text>
-                    </Button>
-                </Item>
+                    <Separator bordered>
+                        <Text>Full</Text>
+                    </Separator>
+                    <ListItem>
+                        <Text>Gente de la U</Text>
+                    </ListItem>
+                    <ListItem last>
+                        <Text>Chamba</Text>
+                    </ListItem>
+                    <Separator bordered>
+                        <Text>Octavos</Text>
+                    </Separator>
+                    <ListItem>
+                        <Text>Familia</Text>
+                    </ListItem>
+                    <ListItem last>
+                        <Text>Primos</Text>
+                    </ListItem>
                 </Content>
+                <View style={{ flex: 1 }}>
+                    <Fab
+                        direction="up"
+                        containerStyle={{ }}
+                        style={{ backgroundColor: '#5067FF' }}
+                        position="bottomRight">
+                        <Icon name="plus" type="FontAwesome"/>
+                    </Fab>
+                </View>
             </Container>
         );
     }
