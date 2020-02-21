@@ -20,10 +20,11 @@ import MainScreen from './src/screens/MainScreen'
 import NativeBaseScreen from './src/screens/NativeBaseScreen'
 import RNElementsScreen from './src/screens/RNElementsScreen'
 import RNVectorIconsScreen from './src/screens/RNVectorIconsScreen'
+import UIKittenScreen from './src/screens/UIKittenScreen'
 
 const App: () => React$Node = () => {
   return (
-    <Navigator initialStack='MainScreen' screens={{ MainScreen, RNVectorIconsScreen, NativeBaseScreen, RNElementsScreen }} />
+    <Navigator initialStack='MainScreen' screens={{ MainScreen, RNVectorIconsScreen, NativeBaseScreen, RNElementsScreen, UIKittenScreen }} />
   );  
 };
 

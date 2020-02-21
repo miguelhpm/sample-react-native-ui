@@ -43,6 +43,15 @@ export default class MainScreen extends React.Component {
                     onPress={() => this.props.navigator.push('RNElementsScreen')}
                     >
                 </Button>
+                <Button
+                    style={{
+                        color: 'black',
+                        fontWeight: 'bold'
+                    }}
+                    title="UI Kitten"
+                    onPress={() => this.props.navigator.push('UIKittenScreen')}
+                    >
+                </Button>
             </View>
         );
     }
